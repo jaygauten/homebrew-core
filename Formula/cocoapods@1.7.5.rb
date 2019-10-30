@@ -14,12 +14,12 @@ class CocoapodsAT175 < Formula
   depends_on "ruby" if MacOS.version <= :sierra
 
   def install
-    ENV["GEM_HOME"] = libexec
+    ENV["GEM_HOME"] = HOMEBREW_PREFIX/"Cellar/cocoapods/1.7.5/libexec"
     system "gem", "build", "cocoapods.gemspec"
     system "gem", "install", "cocoapods-#{version}.gem"
     # Other executables don't work currently.
-    bin.install libexec/"bin/pod", libexec/"bin/xcodeproj"
-    bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
+    bin.install HOMEBREW_PREFIX/"Cellar/cocoapods/1.7.5/libexec/bin/pod", HOMEBREW_PREFIX/"Cellar/cocoapods/1.7.5/libexec/bin/xcodeproj"
+    bin.env_script_all_files(HOMEBREW_PREFIX/"Cellar/cocoapods/1.7.5/libexec/bin", :GEM_HOME => ENV["GEM_HOME"])
   end
 
   test do
