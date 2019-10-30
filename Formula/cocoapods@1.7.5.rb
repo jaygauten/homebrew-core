@@ -1,4 +1,4 @@
-class CocoapodsAT1.7.5 < Formula
+class CocoapodsAT175 < Formula
   desc "Dependency manager for Cocoa projects"
   homepage "https://cocoapods.org/"
   url "https://github.com/CocoaPods/CocoaPods/archive/1.7.5.tar.gz"
