@@ -1,7 +1,8 @@
 class CocoapodsAT175 < Formula
   desc "Dependency manager for Cocoa projects"
   homepage "https://cocoapods.org/"
-  url "https://homebrew.bintray.com/bottles"
+  url "https://github.com/CocoaPods/CocoaPods/archive/1.7.5.tar.gz"
+  sha256 "5a70fd60007975ce224824b1a8852ba9124faa6753061d0ecc024be4cebd6e8b"
 
   bottle do
     cellar :any_skip_relocation
