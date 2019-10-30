@@ -1,6 +1,7 @@
 class CocoapodsAT175 < Formula
   desc "Dependency manager for Cocoa projects"
   homepage "https://cocoapods.org/"
+  url "https://homebrew.bintray.com/bottles"
 
   bottle do
     cellar :any_skip_relocation
